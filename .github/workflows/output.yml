@@ -3,5 +3,7 @@ on: workflow_dispatch
 jobs:
   info:
     runs-on: ubuntu-latest
-      - name: output githubcontenxt
+    steps:
+      - name: output
         run: echo "${{toJSON(github)}}"
+        
